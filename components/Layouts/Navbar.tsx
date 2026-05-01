@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <nav className="w-full h-16 flex items-center justify-between px-4 bg-gray-800 text-white">
+    <nav className="w-full h-16 flex items-center justify-between px-8 bg-linear-to-tr from-rose-500 to-orange-500 text-white">
         <div>
             My Portfolio
         </div>
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <li key={link.name}>
                     
                     <Link href={link.href} className={`flex gap-2 items-center hover:-translate-y-2 transition-all duration-500 ease-in-out 
-                        ${pathname === link.href ? ' text-orange-500' : ''}`}>
+                        `}>
                         <link.icon size={16}/>
                         <p>{link.name}</p>
                     </Link>

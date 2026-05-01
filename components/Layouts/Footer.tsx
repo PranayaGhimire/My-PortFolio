@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" bg-gray-800 text-white p-4">
+    <footer className=" bg-gray-800 text-white p-8">
       <div>My Portfolio</div>
       <ul>
         {navLinks.map((link) => (
@@ -13,7 +13,7 @@ const Footer = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </footer>
   );
 };
 
