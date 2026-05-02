@@ -57,8 +57,8 @@ const AboutMe = () => {
     <div className="p-8">
       <h1 className="font-semibold mb-3 ">About Me</h1>
       {/* About Me Content */}
-      <div className="flex justify-between items-center gap-5 p-4 border border-gray-300 rounded-xl">
-        <div className="w-1/2">
+      <div className="flex flex-col md:flex justify-between items-center gap-5 p-4 border border-gray-300 rounded-xl">
+        <div className="md:w-1/2">
           Hello It&apos;s me Pranaya, I am a full stack software developer with
           hands on experience in building end to end web applications using
           JavaScript and TypeScript. I have a strong passion for learning new
@@ -79,7 +79,7 @@ const AboutMe = () => {
       {/*Tech Stacks  */}
       <div className="mt-4">
         <h2 className="font-semibold mb-2">Tech Stacks</h2>
-        <ul className="list-inside grid grid-cols-8 gap-5 border border-gray-300 rounded-xl p-4">
+        <ul className="list-inside grid grid-cols-1 md:grid-cols-8 gap-5 border border-gray-300 rounded-xl p-4">
           {techStacks.map((tech) => (
             <li
               key={tech.name}
@@ -95,7 +95,7 @@ const AboutMe = () => {
       <div className="mt-4">
         <h2 className="font-semibold mb-2">Experience</h2>
 
-        <div className="grid grid-cols-2 gap-5  border border-gray-300 rounded-xl p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5  border border-gray-300 rounded-xl p-4">
           {/* Internship Experience */}
           <div className="space-y-2">
             <p className="font-semibold">Internship</p>

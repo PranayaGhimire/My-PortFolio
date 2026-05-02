@@ -34,7 +34,7 @@ const ContactMe = () => {
   return (
     <div className="p-8">
       <h1 className="font-semibold mb-3">Contact Information</h1>
-      <ul className="grid grid-cols-2 gap-5 border border-gray-300 rounded-2xl p-4">
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-5 border border-gray-300 rounded-2xl p-4">
         {contactInfos.map((info) => (
           <li key={info.type} className="border border-gray-300 rounded-xl p-4">
             <div className="flex gap-4 items-center">
@@ -43,11 +43,13 @@ const ContactMe = () => {
               </div>
               <div>
                 <p className="font-semibold">{info.type}</p>
+
                 {info.type === "Email" ? (
                   <Link
                     href={`mailto:${info.value}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className=" hover:text-orange-500"
                   >
                     {info.value}
                   </Link>
@@ -56,6 +58,7 @@ const ContactMe = () => {
                     href={`tel:${info.value}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hover:text-orange-500"
                   >
                     {info.value}
                   </Link>
@@ -64,6 +67,7 @@ const ContactMe = () => {
                     href={info.value}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hover:text-orange-500"
                   >
                     {info.value}
                   </Link>
