@@ -22,6 +22,10 @@ const Navbar = () => {
                         <link.icon size={16}/>
                         <p>{link.name}</p>
                     </Link>
+                    {/* When in active state a border should be shown below the link and border should be half the width of the link */}
+                    {pathname === link.href && (
+                        <div className="w-2/3 h-0.5 bg-white rounded-full  mt-1 animate-pulse"/>
+                    )}
                 </li>
             ))}
         </ul>

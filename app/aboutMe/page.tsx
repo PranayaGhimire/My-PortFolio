@@ -57,7 +57,7 @@ const AboutMe = () => {
     <div className="p-8">
       <h1 className="font-semibold mb-3 ">About Me</h1>
       {/* About Me Content */}
-      <div className="flex flex-col md:flex justify-between items-center gap-5 p-4 border border-gray-300 rounded-xl">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-5 p-4 border border-gray-300 rounded-xl">
         <div className="md:w-1/2">
           Hello It&apos;s me Pranaya, I am a full stack software developer with
           hands on experience in building end to end web applications using
