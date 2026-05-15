@@ -83,7 +83,7 @@ const AboutMe = () => {
           {techStacks.map((tech) => (
             <li
               key={tech.name}
-              className="bg-orange-100 text-orange-600 hover:-translate-y-2 duration-500 transition-all rounded-lg px-4 py-2"
+              className="bg-indigo-100 text-indigo-600 hover:-translate-y-2 duration-500 transition-all rounded-lg px-4 py-2"
             >
               <tech.icon size={16} className="inline-block mr-2" />
               {tech.name}
@@ -126,7 +126,7 @@ const AboutMe = () => {
       {/* Download CV */}
       <div className="mt-4">
         <p className="font-semibold mb-2">Curriculum Vitae (C.V.) / Resume</p>
-        <button className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+        <button className="bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition-colors">
           <a href="/Pranaya_Ghimire_Full_Stack_Developer.pdf" download>
             Download CV
             <Download size={16} className="inline-block ml-2" />

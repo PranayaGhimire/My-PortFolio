@@ -48,7 +48,7 @@ const MyProjects = () => {
               {project.techStacks.map((tech, i) => (
                 <span
                   key={i}
-                  className="bg-orange-100 text-orange-500 text-xs font-medium px-2.5 py-2 rounded-lg"
+                  className="bg-indigo-100 text-indigo-500 text-xs font-medium px-2.5 py-2 rounded-lg"
                 >
                   {tech}
                 </span>
@@ -59,7 +59,7 @@ const MyProjects = () => {
                 href={project.liveDemoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-2 items-center text-orange-500 hover:scale-125 transition-transform duration-500"
+                className="flex gap-2 items-center text-indigo-500 hover:scale-125 transition-transform duration-500"
               >
                 Live Link
                 <ExternalLink size={18} />

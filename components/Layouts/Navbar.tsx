@@ -9,7 +9,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
-    <nav className="w-full h-16 flex items-center justify-between px-8 bg-linear-to-tr from-rose-500 to-orange-500 text-white">
+    <nav className="w-full h-16 flex items-center justify-between px-8 bg-linear-to-tr from-indigo-500 to-blue-500 text-white">
         <div>
             My Portfolio
         </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             />
             {isMobileMenuOpen && (
-                <ul className="md:hidden absolute top-16 left-0 w-full bg-orange-700 text-white p-4">
+                <ul className="md:hidden absolute top-16 left-0 w-full bg-indigo-600 text-white p-4">
                     {navLinks.map((link) => (
                         <li key={link.name} className="py-2">
                             <Link href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">

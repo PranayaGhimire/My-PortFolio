@@ -38,8 +38,8 @@ const ContactMe = () => {
         {contactInfos.map((info) => (
           <li key={info.type} className="border border-gray-300 rounded-xl p-4">
             <div className="flex gap-4 items-center">
-              <div className="rounded-full bg-orange-100 p-2 w-8 h-8">
-                <info.icon size={16} className="text-orange-600" />
+              <div className="rounded-full bg-indigo-100 p-2 w-8 h-8">
+                <info.icon size={16} className="text-indigo-600" />
               </div>
               <div>
                 <p className="font-semibold">{info.type}</p>
@@ -49,7 +49,7 @@ const ContactMe = () => {
                     href={`mailto:${info.value}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" hover:text-orange-500"
+                    className=" hover:text-indigo-500"
                   >
                     {info.value}
                   </Link>
@@ -58,7 +58,7 @@ const ContactMe = () => {
                     href={`tel:${info.value}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-orange-500"
+                    className="hover:text-indigo-500"
                   >
                     {info.value}
                   </Link>
@@ -67,7 +67,7 @@ const ContactMe = () => {
                     href={info.value}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-orange-500"
+                    className="hover:text-indigo-500"
                   >
                     {info.value}
                   </Link>
