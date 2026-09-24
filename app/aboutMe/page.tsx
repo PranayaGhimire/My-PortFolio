@@ -55,7 +55,7 @@ const AboutMe = () => {
           </p>
           <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
             <a 
-              href="/Pranaya_Ghimire_Full_Stack_Developer.pdf" 
+              href="/Pranaya_Ghimire_Resume.pdf" 
               download
               className="flex items-center gap-2 bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-full font-medium transition-all shadow-lg shadow-indigo-200 active:scale-95"
             >

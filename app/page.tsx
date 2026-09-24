@@ -3,12 +3,7 @@ import { ExternalLink, Mail, Code2, Layers, Cpu, ArrowRight } from 'lucide-react
 
 const Home = () => {
   const projects = [
-    {
-      title: "School Management System",
-      desc: "An enterprise-grade platform for academic administration, featuring automated grading and attendance tracking.",
-      tech: ["Next.js", "PostgreSQL", "TypeORM"],
-      link: "#"
-    },
+   
     {
       title: "The Momo House",
       desc: "A high-performance food delivery application with seamless state management and mobile responsiveness.",

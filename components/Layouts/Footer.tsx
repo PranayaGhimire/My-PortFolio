@@ -18,7 +18,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-indigo-500 border-t text-white border-slate-200 pt-16 pb-8 px-6 md:px-12">
+    <footer className="bg-stone-600 border-t text-white border-slate-200 pt-16 pb-8 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           
