@@ -52,7 +52,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link 
                     href={link.href} 
-                    className=" hover:text-indigo-700 hover:pl-2 transition-all duration-300 text-sm font-medium"
+                    className=" hover:text-white/60 hover:pl-2 transition-all duration-300 text-sm font-medium"
                   >
                     {link.name}
                   </Link>
@@ -67,13 +67,13 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 group text-sm">
                 <Mail size={18} className=" mt-0.5" />
-                <a href="mailto:pranayaghimire88083@gmail.com" className="group-hover:text-slate-800 transition-colors">
+                <a href="mailto:pranayaghimire88083@gmail.com" className="group-hover:text-white/60 transition-colors">
                   pranayaghimire88083@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3 group  text-sm">
                 <Phone size={18} className="" />
-                <a href="tel:+9779840505684" className="group-hover:text-slate-800 transition-colors">
+                <a href="tel:+9779840505684" className="group-hover:text-white/60 transition-colors">
                   +977 9840505684
                 </a>
               </li>
@@ -109,9 +109,6 @@ const Footer = () => {
         <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className=" text-xs">
             &copy; {new Date().getFullYear()} Pranaya Ghimire. Built with Next.js & Tailwind.
-          </p>
-          <p className=" text-[10px] flex items-center gap-1">
-            Made with <span className="text-red-500">❤️</span> in Nepal
           </p>
         </div>
       </div>
