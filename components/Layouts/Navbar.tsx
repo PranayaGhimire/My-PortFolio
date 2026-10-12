@@ -25,10 +25,10 @@ const Navbar = () => {
       {/* Logo Area */}
       <div className="flex items-center gap-2">
         <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-200">
-          <span className="text-white font-bold text-xl">P</span>
+          <span className="text-white font-bold text-xl">PG</span>
         </div>
         <span className={`font-bold text-xl tracking-tight`}>
-          Pranaya<span className="text-indigo-500">.dev</span>
+          Pranaya<span className="text-indigo-500"> Ghimire</span>
         </span>
       </div>
 

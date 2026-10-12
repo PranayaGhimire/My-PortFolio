@@ -1,20 +1,21 @@
 import React from 'react';
 import { ExternalLink, Mail, Code2, Layers, Cpu, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const Home = () => {
   const projects = [
    
     {
       title: "The Momo House",
-      desc: "A high-performance food delivery application with seamless state management and mobile responsiveness.",
-      tech: ["React Native", "Redux", "Tailwind"],
-      link: "#"
+      desc: "A high-performance food delivery web application with seamless state management and mobile responsiveness.",
+      tech: ["NextJS", "Redux", "Tailwind","NestJS","MongoDB"],
+      link: "https://fos.pranayaghimire.com.np"
     },
     {
-      title: "Travel & Trekking API",
-      desc: "A scalable backend service for outdoor enthusiasts, optimized for geospatial queries and route mapping.",
-      tech: ["NestJS", "Node.js", "MongoDB"],
-      link: "#"
+      title: "Travel & Trekking System",
+      desc: "A scalable travel & trekking system for outdoor enthusiasts, optimized for geospatial queries and route mapping.",
+      tech: ["NextJS","Tailwind", "NestJS", "Node.js", "MongoDB"],
+      link: "https://tts.pranayaghimire.com.np"
     }
   ];
 
@@ -40,7 +41,7 @@ const Home = () => {
             <a href="#projects" className="flex items-center gap-2 px-8 py-4 bg-indigo-500 hover:bg-indigo-600 text-white rounded-xl font-semibold transition-all shadow-lg shadow-indigo-200">
               View Work <ArrowRight size={18} />
             </a>
-            <a href="https://github.com" className="flex items-center gap-2 px-8 py-4 bg-white border border-slate-200 hover:border-slate-300 text-slate-700 rounded-xl font-semibold transition-all">
+            <a href="https://github.com/PranayaGhimire" className="flex items-center gap-2 px-8 py-4 bg-white border border-slate-200 hover:border-slate-300 text-slate-700 rounded-xl font-semibold transition-all">
               {/* <Github size={20} />  */}
               GitHub
             </a>
@@ -53,7 +54,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-indigo-400 mb-6 text-center">Tech Stacks</p>
           <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
-            {['Next.js', 'React Native', 'TypeScript', 'PostgreSQL', 'NestJS', 'Tailwind'].map((tech) => (
+            {['Next.js','Nuxt.js','React Native', 'TypeScript', 'PostgreSQL','MongoDB', 'NestJS', 'Tailwind'].map((tech) => (
               <span key={tech} className="text-indigo-500 font-medium hover:text-indigo-600 cursor-default transition-colors">
                 {tech}
               </span>
@@ -71,7 +72,7 @@ const Home = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
-            <div key={idx} className="group flex flex-col p-8 rounded-3xl bg-white border border-gray-100 hover:border-white hover:shadow-2xl hover:shadow-indigo-100 transition-all duration-300">
+            <Link href={project.link} key={idx} className="group flex flex-col p-8 rounded-3xl bg-white border border-gray-100 hover:border-white hover:shadow-2xl hover:shadow-indigo-100 transition-all duration-300">
               <div className="mb-6 w-12 h-12 flex items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
                 {idx === 0 ? <Layers size={22} /> : idx === 1 ? <Code2 size={22} /> : <Cpu size={22} />}
               </div>
@@ -88,7 +89,7 @@ const Home = () => {
                   </span>
                 ))}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

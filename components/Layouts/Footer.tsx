@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-4">
             <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-200 to-gray-100 bg-clip-text text-transparent">
-              Pranaya<span className="">.dev</span>
+              Pranaya<span className=""> Ghimire</span>
             </h2>
             <p className=" text-sm leading-relaxed">
               Full Stack Developer based in Nepal, building modern web experiences with 

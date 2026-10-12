@@ -4,11 +4,11 @@ import profilePic from "../../assets/profilePic.jpg";
 import { Download, ExternalLink, Briefcase, Code2 } from "lucide-react";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BsTypescript } from "react-icons/bs";
-import { FaNodeJs, FaReact } from "react-icons/fa6";
+import { FaNodeJs, FaReact, FaVuejs } from "react-icons/fa6";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress, SiNestjs } from "react-icons/si";
+import { SiExpress, SiNestjs, SiNuxt, SiSpringboot } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoSpringBoot } from "react-icons/bi";
 
 const AboutMe = () => {
   const techStacks = [
@@ -16,9 +16,12 @@ const AboutMe = () => {
     { name: "TypeScript", icon: BsTypescript, color: "hover:text-blue-500" },
     { name: "React", icon: FaReact, color: "hover:text-cyan-400" },
     { name: "Next.js", icon: RiNextjsFill, color: "hover:text-black" },
+    { name: "Vue.js", icon:FaVuejs,color:"hover:text-green-600" },
+    { name: "Nuxt.js",icon:SiNuxt,color:"hover:text-green-600" },
     { name: "Node.js", icon: FaNodeJs, color: "hover:text-green-500" },
     { name: "Express.js", icon: SiExpress, color: "hover:text-gray-600" },
     { name: "Nest.js", icon: SiNestjs, color: "hover:text-red-600" },
+    { name: "Spring Boot",icon: BiLogoSpringBoot,color:"hover:text-lime-500" },
     { name: "MongoDB", icon: DiMongodb, color: "hover:text-green-600" },
     { name: "PostgreSQL", icon: BiLogoPostgresql, color: "hover:text-blue-400" },
     { name: "Tailwind CSS", icon: RiTailwindCssFill, color: "hover:text-sky-400" },
@@ -47,7 +50,7 @@ const AboutMe = () => {
             About Me
           </h1>
           <p className="text-lg leading-relaxed text-slate-600 max-w-2xl">
-            Hello! I&apos;s me <span className="font-semibold text-indigo-600">Pranaya</span>. 
+            Hello! It&apos;s me <span className="font-semibold text-indigo-600">Pranaya</span>. 
             I am a Full Stack Software Developer specialized in building scalable end-to-end 
             applications. Currently crafting digital solutions at 
             <span className="font-medium text-slate-900"> Infi Loop Pvt. Ltd</span>, 
